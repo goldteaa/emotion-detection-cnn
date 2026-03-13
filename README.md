@@ -1,37 +1,62 @@
-# Emotion Detection CNN
-
-Real-time facial emotion recognition using **Convolutional Neural Networks (CNN)**, **OpenCV**, and **Keras**.
-
-This project detects human emotions from facial expressions using a trained deep learning model and a webcam feed.
-
----
+# Emotion Detection using Convolutional Neural Networks
 
 ## Project Overview
 
-Facial emotion recognition is an important application of computer vision and deep learning.  
-This project implements a CNN-based model trained to classify facial expressions into different emotional categories.
+This project implements a **deep learning model for facial emotion recognition** using Convolutional Neural Networks (CNN).
 
-The system uses **OpenCV** to detect faces from webcam input and a **Keras deep learning model** to predict the emotion of each detected face.
+The system detects faces from a webcam feed using **OpenCV** and predicts the emotion displayed by each detected face using a trained **Keras CNN model**.
 
----
-
-## Features
-
-- Real-time emotion detection using webcam
-- Face detection using Haar Cascade classifier
-- CNN-based emotion classification
-- Emotion prediction from images
-- Deep learning model trained with Keras
+Facial emotion recognition is an important application of **computer vision and artificial intelligence**, with use cases in human-computer interaction, behavioral analysis, and smart interfaces.
 
 ---
 
-## Technologies Used
+## Objective
 
-- Python
-- OpenCV
-- TensorFlow / Keras
-- NumPy
-- Convolutional Neural Networks (CNN)
+The goal of this project is to build a real-time system capable of detecting human emotions from facial expressions using deep learning techniques.
+
+The model analyzes facial images and classifies them into multiple emotional categories, demonstrating how convolutional neural networks can be applied to real-world computer vision problems.
+
+---
+
+## Dataset
+
+The model was trained using the **FER2013 Facial Expression Dataset**, a widely used dataset for emotion recognition tasks.
+
+The dataset contains thousands of grayscale facial images labeled with different emotional expressions.
+
+Dataset source:
+
+https://www.kaggle.com/datasets/msambare/fer2013
+
+---
+
+## Tools & Technologies
+
+* Python
+* OpenCV
+* TensorFlow / Keras
+* NumPy
+* Convolutional Neural Networks (CNN)
+
+---
+
+## Methodology
+
+1. Face Detection using OpenCV Haar Cascade
+2. Image preprocessing and resizing
+3. Training a Convolutional Neural Network using Keras
+4. Emotion classification using the trained CNN model
+5. Real-time emotion prediction using webcam input
+
+The model processes facial images and predicts one of several emotional states.
+
+---
+
+## Results
+
+The trained CNN model successfully detects and classifies emotions from facial expressions in real time.
+
+The system combines **face detection with deep learning classification**, allowing the model to identify emotional states directly from webcam video streams.
 
 ---
 
@@ -41,58 +66,40 @@ The system uses **OpenCV** to detect faces from webcam input and a **Keras deep 
 emotion-detection-cnn
 │
 ├── main.py
-│   Real-time webcam emotion detection
-│
 ├── predict_image.py
-│   Emotion detection from an image
-│
 ├── emotion-classification-cnn-using-keras.ipynb
-│   Model training notebook
-│
 ├── haarcascade_frontalface_default.xml
-│   Face detection model
-│
 ├── model.h5
-│   Trained CNN model
-│
 └── README.md
 ```
-
-
----
-
-## Dataset
-
-The model was trained using the **FER2013 Facial Expression Dataset**.
-
-Dataset link:  
-https://www.kaggle.com/datasets/msambare/fer2013
-
----
-
-## Installation
-
-Clone the repository:
-git clone https://github.com/goldteaa/emotion-detection-cnn.git
-
-Install dependencies:
-pip install opencv-python tensorflow keras numpy
 
 ---
 
 ## How to Run
 
-Run real-time emotion detection:
+1. Clone the repository
 
+```
+git clone https://github.com/goldteaa/emotion-detection-cnn.git
+```
 
+2. Install dependencies
+
+```
+pip install opencv-python tensorflow keras numpy
+```
+
+3. Run real-time emotion detection
+
+```
 python main.py
+```
 
+4. Run emotion detection on an image
 
-Run emotion detection on an image:
-
-
+```
 python predict_image.py
-
+```
 
 ---
 
@@ -100,25 +107,21 @@ python predict_image.py
 
 The model classifies the following emotions:
 
-- Angry
-- Disgust
-- Fear
-- Happy
-- Neutral
-- Sad
-- Surprise
+* Angry
+* Disgust
+* Fear
+* Happy
+* Neutral
+* Sad
+* Surprise
 
 ---
 
 ## Future Improvements
 
-- Improve model accuracy with deeper CNN architectures
-- Deploy as a web application
-- Add support for video file emotion analysis
-- Build a real-time emotion dashboard
+* Improve model accuracy using deeper CNN architectures
+* Train the model on larger datasets
+* Deploy the system as a web application
+* Add support for emotion detection from video files
 
 ---
-
-## Author
-AM - 
-Created as part of a **Master's Degree in Data Science & Business Aalytics** project.
