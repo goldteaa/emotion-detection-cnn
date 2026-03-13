@@ -5,8 +5,8 @@ import numpy as np
 import os
 
 # Load face detector and emotion recognition model
-face_classifier = cv2.CascadeClassifier(r'C:\Users\user\Desktop\Emotion_Detection_CNN-main\haarcascade_frontalface_default.xml')
-classifier = load_model(r'C:\Users\user\Desktop\Emotion_Detection_CNN-main\model.h5')
+face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+classifier = load_model('model.h5')
 
 # Emotion labels
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
