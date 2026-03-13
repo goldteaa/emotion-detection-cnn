@@ -36,14 +36,27 @@ The system uses **OpenCV** to detect faces from webcam input and a **Keras deep 
 ---
 
 ## Project Structure
+
+```
 emotion-detection-cnn
 │
-├ main.py # Real-time webcam emotion detection
-├ predict_image.py # Emotion detection from an image
-├ emotion-classification-cnn-using-keras.ipynb # Model training notebook
-├ haarcascade_frontalface_default.xml # Face detection model
-├ model.h5 # Trained CNN model
-└ README.md
+├── main.py
+│   Real-time webcam emotion detection
+│
+├── predict_image.py
+│   Emotion detection from an image
+│
+├── emotion-classification-cnn-using-keras.ipynb
+│   Model training notebook
+│
+├── haarcascade_frontalface_default.xml
+│   Face detection model
+│
+├── model.h5
+│   Trained CNN model
+│
+└── README.md
+```
 
 
 ---
@@ -107,5 +120,5 @@ The model classifies the following emotions:
 ---
 
 ## Author
-AM
+AM - 
 Created as part of a **Master's Degree in Data Science & Business Aalytics** project.
